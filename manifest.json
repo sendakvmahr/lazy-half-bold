@@ -1,0 +1,19 @@
+{
+
+  "description": "Semi Bionic Text addon",
+  "manifest_version": 2,
+  "name": "Semi Bionic Text",
+  "version": "0.0",
+  "homepage_url": "https://github.com/",
+  "icons": {
+    "48": "lazyhalfbold.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["semi_bionic.js"]
+    }
+  ]
+
+}

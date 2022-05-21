@@ -1,0 +1,43 @@
+<!doctype html>
+<body>
+
+<h1> Simple Cases</h1>
+<p>This is a Simple Test Case!</p>
+<p>This is a Simple Test Case.</p>
+<p>This is a Simple Test Case</p>
+<div><a href="#"> There's</a>a a more challenging thing <a href="#">here</a>.</div>
+<span>This is a lonely span.</span>
+<button style="padding: 20px;" id="button" onclick="addItem()">addItem</button>
+<button style="padding: 20px;" id="button2" onclick="changeButtonText()">change</button>
+
+<h2>Added text goes here </h2>
+<div id="here"></div>
+
+
+</body>
+
+<style>
+	:root {
+		--highlight-text-color:  #000000;
+	} 
+	.thicc {
+		text-shadow:  .3px .3px var(--highlight-text-color), -.3px -.3px var(--highlight-text-color);
+	}
+
+</style>
+<script>
+// some scripts to test out functionality
+function addItem() {
+	let toAppend = document.createElement("li");
+	toAppend.textContent = "This was an added item";
+	document.getElementById("here").appendChild(toAppend);	
+}
+
+function changeButtonText() {
+	let button = document.getElementById("button2")
+	button.innerText = (button.innertext == "change" ? "change1" : "change" )
+ }
+
+</script>
+<script src="../semi_bionic.js"></script>
+</html>
